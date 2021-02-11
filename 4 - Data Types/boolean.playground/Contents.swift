@@ -24,5 +24,8 @@ import UIKit
 /*:
  # Boolean
  */
+let valid = true
+let invalid = false
 
-
+let b_valid : Bool = true
+let b_invalid : Bool = false

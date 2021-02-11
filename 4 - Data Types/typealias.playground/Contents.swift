@@ -28,9 +28,15 @@ import UIKit
  */
 
 
+typealias Coordinate = Double
 
+/*
+let lat : Double = 12.34
+let lon : Double = 56.78
+*/
 
-
+let lat : Coordinate = 12.34
+let lon : Double = 56.78
 
 
 

@@ -25,8 +25,21 @@ import UIKit
  # Type Inference
  */
 
+let num = 123
 
+type(of: num)
 
+let temp = 11.2
+
+type(of: temp)
+
+let str = "Swift"
+
+type(of: str)
+
+let valid = false
+
+type(of: valid)
 
 
 

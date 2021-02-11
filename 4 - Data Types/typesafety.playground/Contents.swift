@@ -24,8 +24,19 @@ import UIKit
 /*:
  # Type Safety
  */
+let a : Int = 7
+
+// let b : Int8 = a
+
+let c : Int = a
 
 
+let rate = 1.94
+let amt = 10_000_00
+let result = rate * Double( amt )
+
+
+Int(rate*Double(amt))
 
 
 

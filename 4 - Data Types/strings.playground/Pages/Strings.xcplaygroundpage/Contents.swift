@@ -24,13 +24,22 @@ import UIKit
 /*:
  # Strings
  */
+let Str = "Have a nice day"
 
+let StrTy : String = "Test String"
+
+type(of:Str)
 
 
 /*:
  # Character
  */
 
+let ch : Character = "1"
+
+type(of: ch)
+
+let emptyCh : Character = " "
 
 
 

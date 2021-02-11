@@ -30,6 +30,20 @@ import UIKit
  */
 
 
+let a = 123
+let b = 4.56
+
+Double( a ) + b
+
+a + Int(b)
+
+let c = Int8(a)
+
+type(of: c)
+
+let str = "number"
+let num = Int(str)
+
 
 
 
