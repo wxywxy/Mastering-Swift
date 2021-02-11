@@ -26,10 +26,48 @@ import UIKit
  ## Syntax
  ![syntax](syntax.png)
  */
+struct Point
+{
+    var x = 0.0
+    var y = 0.0
+}
+
+let p1 = Point(x:12,y:34)
+let p2 = Point(x:67,y:89)
+
+extension Point
+{
+    static prefix func -(pt:Point) -> Point
+    {
+        return Point(x:-pt.x,y:-pt.y)
+    }
+}
+
+let p3 = -p1
+
+p3.x
+p3.y
+
+extension Point
+{
+    static postfix func ++(pt: inout Point) -> Point
+    {
+        let ret = pt;
+        
+        pt.x += 1
+        pt.y += 1
+        
+        return ret
+    }
+}
 
 
+var p4 = Point(x: 1.0, y: 2.0)
 
+let p5 = p4++
 
+p5.x
+p5.y
 
-
-
+p4.x
+p4.y

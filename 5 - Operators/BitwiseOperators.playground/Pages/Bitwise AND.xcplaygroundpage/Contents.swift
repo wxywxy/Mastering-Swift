@@ -32,7 +32,12 @@ import Foundation
  */
 
 
+let a = 0b00100011
+let b = 0b00011010
 
+a & b
+
+0b0000010
 
 
 

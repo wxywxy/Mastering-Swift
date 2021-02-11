@@ -31,7 +31,11 @@ import Foundation
  ![rshift](rshift.png)
  */
 
+let a : UInt8 = 0b00100011
 
+a >> 1
+
+0b00010001
 
 
 /*:

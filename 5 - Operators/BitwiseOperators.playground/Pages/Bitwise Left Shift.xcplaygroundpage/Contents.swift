@@ -32,6 +32,10 @@ import Foundation
  */
 
 
+let a = 0b00100011
 
+a << 1
+
+0b01000110
 
 //: [Next](@next)

@@ -28,6 +28,19 @@ import UIKit
  ````
  */
 
+let a = 12
+var b = 34
+
+b = a
+
+if 0 == a
+{
+    
+}
+
+// lvalue
+// rvalue
+
 
 
 //: [Next](@next)

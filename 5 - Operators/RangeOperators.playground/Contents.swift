@@ -35,9 +35,23 @@ import UIKit
  ````
  */
 
+1 ... 10
 
+(1 ... 10).reversed()
 
+var sum = 0
 
+for num in 1 ... 10
+{
+    num
+    sum += num
+}
+
+let list = ["A" , "B" , "C" , "D" , "E" ]
+
+list[2...]
+
+list[...2]
 /*:
  ## Half-Opern Range Operator
  ````
@@ -48,8 +62,11 @@ import UIKit
 
 
 
+let range = ...5
 
-
+range.contains(7)
+range.contains(1)
+range.contains(-1)
 
 
 
