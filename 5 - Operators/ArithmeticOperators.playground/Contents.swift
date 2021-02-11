@@ -26,7 +26,8 @@ import UIKit
  # Arithmetic Operators
  */
 
-
+let a = 12
+let b = 34
 
 /*:
  ## Unary Plus Operator
@@ -35,6 +36,8 @@ import UIKit
  ````
  */
 
++a
++b
 
 
 /*:
@@ -44,7 +47,7 @@ import UIKit
  ````
  */
 
-
+a + b
 
 /*:
  ## Unary Minus Operator
@@ -53,7 +56,7 @@ import UIKit
  ````
  */
 
-
+-a
 
 /*:
  ## Subtraction Operator
@@ -62,7 +65,7 @@ import UIKit
  ````
  */
 
-
+a - b
 
 /*:
  ## Multiplication Operator
@@ -71,7 +74,7 @@ import UIKit
  ````
  */
 
-
+a * b
 
 /*:
  ## Division Operator
@@ -80,8 +83,13 @@ import UIKit
  ````
  */
 
+a / b
+b / a
 
+let c = Double(a)
+let d = Double(b)
 
+c / d
 /*:
  ## Remainder Operator (Modulo Operator)
  ````
@@ -89,12 +97,10 @@ import UIKit
  ````
  */
 
+a % b
+b % a
 
+a % b
 
-/*:
- ## Overflow
- */
-
-
-
+c.truncatingRemainder(dividingBy: d)
 
