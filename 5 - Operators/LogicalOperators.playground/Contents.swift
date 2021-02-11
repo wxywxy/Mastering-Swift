@@ -33,6 +33,11 @@ import UIKit
  ````
  */
 
+let a = 12
+let b = 34
+
+!(a < b)
+
 
 
 /*:
@@ -42,7 +47,8 @@ import UIKit
  ````
  */
 
-
+true && true
+true && false
 
 /*:
  ## Logical OR Operators
@@ -51,7 +57,7 @@ import UIKit
  ````
  */
 
-
+a > 30 || b % 2 == 0
 
 
 

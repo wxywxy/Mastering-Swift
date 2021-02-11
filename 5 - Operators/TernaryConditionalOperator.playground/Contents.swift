@@ -27,7 +27,21 @@ import UIKit
  ![Syntax](syntax.png)
  */
 
+let h = 12
 
+h < 12 ? "am" : "pm"
+
+if h < 12
+{
+    "am"
+}
+else
+{
+    "pm"
+}
+
+
+h < 11 ? "Good Morning" : h < 17 ? "Good Afternoon" : "Good Evenig"
 
 
 

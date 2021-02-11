@@ -24,7 +24,8 @@ import UIKit
 /*:
  # Comparison Operators
  */
-
+let a = 10
+let b = 20
 
 /*:
  ## Equal to Operator
@@ -32,9 +33,7 @@ import UIKit
  a == b
  ````
  */
-
-
-
+a == b
 /*:
  ## Not equal to Operator
  ````
@@ -51,6 +50,7 @@ import UIKit
  ````
  */
 
+"swift" > "Swift"
 
 
 /*:
