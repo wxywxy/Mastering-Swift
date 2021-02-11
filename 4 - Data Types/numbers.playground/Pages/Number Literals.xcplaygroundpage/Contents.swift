@@ -24,6 +24,9 @@ import UIKit
 /*:
  # Number Literals
  */
+var a = 1_000_000
+print(a)
+
 
 
 //: [Next](@next)

@@ -28,6 +28,15 @@ import UIKit
  
  ![IntegerTypes](integer-types.png)
  */
+Int8.min
+Int8.max
+
+UInt8.min
+UInt8.max
+
+MemoryLayout<Int>.size
+
+
 
 
 
