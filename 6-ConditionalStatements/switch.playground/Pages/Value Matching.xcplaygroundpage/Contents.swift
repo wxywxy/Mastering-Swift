@@ -29,11 +29,14 @@ import UIKit
 
 let num = 1
 
-switch num {
+switch num
+{
 case 1:
    print("one")
+
 case 2, 3:
    print("two or three")
+
 default:
    print("others")
 }
@@ -49,6 +52,14 @@ case let n where n <= 10:
    print(n)
 default:
    print("others")
+}
+
+switch num
+{
+case let n where n <= 10:
+    print(n)
+default:
+    print("other")
 }
 
 

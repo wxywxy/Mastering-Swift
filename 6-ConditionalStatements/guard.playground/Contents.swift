@@ -28,9 +28,53 @@ import UIKit
  */
 
 
+func validate(id:String?) -> Bool {
+    guard let sid = id else {
+        return false
+    }
+
+    guard sid.count >= 6 else {
+        return false
+    }
+
+//    guard let id = id , id.count >= 6 else
+//    {
+//        return false
+//    }
+    
+    return true
+}
+
+validate(id: nil)
+
+validate(id: "abc")
+
+validate(id: "abcdefghijk")
+
+func validateUsingIf() {
+    var id:String? = nil
+    
+    if let str = id {
+        if str.count >= 6 {
+            print(str)
+        }
+    }
+}
 
 
-
+func validateUsingGuard() {
+    var id : String? = nil
+    
+    guard let str = id else {
+       return
+    }
+    
+    guard str.count >= 6 else {
+        return
+    }
+    
+    print(str)
+}
 
 
 

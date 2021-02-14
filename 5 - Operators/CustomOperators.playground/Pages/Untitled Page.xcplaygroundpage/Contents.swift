@@ -35,8 +35,35 @@ import UIKit
  */*/
 
 
+prefix operator +++
 
+extension Int {
+    static prefix func +++(num:inout Int)
+    {
+        num += 2
+    }
+}
 
+var a = 1
+
++++a
+a
+
+precedencegroup Mtprecedence
+{
+    higherThan : AdditionPrecedence
+}
+
+infix operator *+* : Mtprecedence
+
+extension Int {
+    static func *+*(left:Int,right:Int) -> Int
+    {
+        return ( left * right ) + ( left * right )
+    }
+}
+
+1 *+* 2 + 3
 
 
 
@@ -57,6 +84,7 @@ import UIKit
  
  ![precedence-group-declaration](precedence-group-declaration.png)
  */
+
 
 
 
