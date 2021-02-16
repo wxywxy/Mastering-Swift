@@ -26,24 +26,32 @@ import UIKit
 
 
 
-
-
-
-
-
-
-
-
 /*:
  ## Syntax
  ![syntax](syntax-range.png)
  */
 
 
+for i in 1...10
+{
+    print(i)
+}
 
 
+let power = 10
+var result = 1
 
+for _ in 1 ... power
+{
+    result *= 2
+}
 
+result
+
+for num in stride(from: 0, to: 10 , by: 2 )
+{
+    print(num)
+}
 
 
 
@@ -53,7 +61,22 @@ import UIKit
  */
 
 
+let list = [ "apple" , "apple2" , "apple3" ]
 
+for ir in list
+{
+    print(ir)
+}
+
+
+
+for x in 2...9
+{
+    for y in 1...9
+    {
+        print("\(x) * \(y) = \(x*y)")
+    }
+}
 
 
 
