@@ -26,6 +26,23 @@ import UIKit
  */
 
 
+for i in 1...10
+{
+    print("Outer Loop",i)
+    
+    for j in 1...10
+    {
+        if j % 2 == 0
+        {
+            continue;
+        }
+
+        print("    Inner loop",j)
+    }
+}
+
+
+
 
 
 

@@ -32,7 +32,7 @@ import Foundation
  */
 
 
-var num = 0
+var num = 100
 
 while num < 100
 {
@@ -40,7 +40,7 @@ while num < 100
 }
 
 num
-num = 0;
+num = 100;
 
 repeat
 {
