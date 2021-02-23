@@ -30,6 +30,14 @@ import UIKit
 
 
 
+func add(a:Int,b:Int) -> Int
+{
+    return a + b
+}
+
+print(add(a: 10, b: 20))
+
+
 
 
 
@@ -69,6 +77,12 @@ import UIKit
 
 
 
+func sayHello(to:String = "Stranger")
+{
+    print("Hello, \(to)")
+}
+
+sayHello(to:"Swift")
 
 
 

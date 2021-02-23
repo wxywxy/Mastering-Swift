@@ -31,6 +31,7 @@ import UIKit
  */
 
 
+print("hello")
 
 
 
@@ -45,6 +46,13 @@ import UIKit
  ![define](define.png)
  */
 
+
+func sayHello()
+{
+    print("hello, swift")
+}
+
+sayHello()
 
 
 

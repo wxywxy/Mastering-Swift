@@ -36,10 +36,22 @@ struct Person {
    }
 }
 
+var p = Person(name: "James", email: "swift@example.com" )
+
+let a = p.contacts.address
+
+var op : Person? = Person(name: "James", email: "swift@example.com" )
+
+let b = op?.contacts.address
+
+op = nil
+let c = op?.contacts.address
+
 
 /*:
  # Optional Chaining
  */
+
 
 
 
