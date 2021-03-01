@@ -27,6 +27,27 @@ import UIKit
  */
 
 
+print("Hello")
+
+print("Hello","Swift")
+
+
+func printSum(of nums:Int...)
+{
+    var sum = 0
+    
+    for num in nums
+    {
+        sum += num
+    }
+    
+    print(sum)
+}
+
+printSum(of: 1,2,3)
+
+printSum(of: 1,2,3,4,5,6)
+
 
 
 

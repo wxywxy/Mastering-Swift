@@ -29,10 +29,19 @@ func sayHello(name: String) {
    print("Hello, \(name)")
 }
 
+func sayHello(to name:String)
+{
+    print("Hello, \(name)")
+}
+
+func sayHello(_ name:String)
+{
+    print("Hello, \(name)")
+}
+
 sayHello(name: "Swift")
-
-
-
+sayHello(to: "wxywxy")
+sayHello("hyun joong")
 
 
 

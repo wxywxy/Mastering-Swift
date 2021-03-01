@@ -47,3 +47,28 @@ import UIKit
  */
 
 
+var num1 = 12
+var num2 = 34
+
+func swapNumber(_ a:inout Int,with b:inout Int)
+{
+    let temp = a
+    
+    a = b
+    b = temp
+}
+
+swapNumber(&num1, with:&num2)
+
+num1
+num2
+
+let a = 12
+let b = 34
+
+// swapNumber(&a, with: &b)
+// swapNumber(&10, with: &20)
+func sum(of nums:inout Int...)
+{
+    
+}
