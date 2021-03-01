@@ -34,6 +34,31 @@ let products = [
    "Apple Watch Series 4", "Apple Watch Nike+"
 ]
 
+// 기본문법
+var proModels = products.filter({ ( name : String ) -> Bool in
+    return name.contains("Pro")
+})
+
+
+// 최적화
+products.filter {
+    $0.contains("Pro")
+}
+
+
+
+// 기본 문법
+proModels.sort(by: { (lhs:String,rhs:String) -> Bool in
+    return lhs.caseInsensitiveCompare(rhs) == .orderedAscending
+})
+
+// 최적화문법
+proModels.sort {
+    $0.caseInsensitiveCompare($1) == .orderedAscending
+}
+
+
+
 
 
 

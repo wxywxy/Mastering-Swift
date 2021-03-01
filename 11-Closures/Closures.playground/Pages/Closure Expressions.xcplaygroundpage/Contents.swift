@@ -29,9 +29,30 @@ import UIKit
  */
 
 
+let c = { print("hello , Swift")}
+
+c()
 
 
+let c2 = { (str:String) -> String in
+    return "Hello, \(str)"
+}
 
+let result = c2("Closure")
+print(result)
+
+typealias SimpleStringClosure = (String) -> String
+
+func perform(closure:SimpleStringClosure)
+{
+    print(closure("iOS"))
+}
+
+perform(closure: c2)
+
+perform(closure: { (str:String)->String in
+    return "Hi,\(str)"
+} )
 
 
 

@@ -26,7 +26,37 @@ import UIKit
  */
 
 
+func performNonEscaping(closure : () -> () ) {
+    print("start")
+    closure()
+    print("end")
+}
 
+// 기본
+performNonEscaping(closure : { () -> () in
+    print("closure")
+})
+
+// 단축형
+performNonEscaping {
+    print("closure2")
+}
+
+
+func performEscaping(closure : @escaping () -> () ) {
+    print("start")
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        closure()
+    }
+    
+    print("end")
+}
+
+
+performEscaping {
+    print("EscapingClosure")
+}
 
 
 

@@ -1,3 +1,4 @@
+
 //
 //  Copyright (c) 2018 KxCoding <kky0317@gmail.com>
 //
@@ -24,6 +25,17 @@ import UIKit
 /*:
  # Capturing Values
  */
+
+
+var num = 0
+let c = {
+    print("check point #1: \(num)")
+    num += 1
+}
+
+c()
+
+print("check point #1: \(num)")
 
 
 
