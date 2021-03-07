@@ -41,6 +41,25 @@ import UIKit
  */
 
 
+let s = "String"                // 문자열
+let str : String = "String"     // 문자열
+let c = "C"                     // 문자열
+
+let ch : Character = "C"        // 문자
+
+let emptyChar : Character = " "  // 공백문자
+let spaceString = " "
+let emptyString = ""
+let spaceString2 = String()
+
+spaceString.count
+emptyString.count
+
+var nsstr : NSString = "str"
+
+var swiftStr : String = nsstr as String;
+
+nsstr = swiftStr as NSString
 
 
 
@@ -54,6 +73,12 @@ import UIKit
 /*:
  ## Mutability
  */
+let immutableStr = "str"
+
+// immutableStr = "sss"
+
+var mutableStr = "new Str"
+
 
 
 
@@ -76,8 +101,14 @@ import UIKit
 /*:
  ## Unicode
  */
+let StrTemp = "Swift String"
 
+StrTemp.utf8
+StrTemp.utf16
 
+var thumbUp = "👍"
+
+thumbUp = "\u{1F44D}"
 
 
 

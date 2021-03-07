@@ -31,6 +31,14 @@ import UIKit
 
 
 
+let data = ("<html>",200,"OK",12.34)
+
+print( data.0 )
+
+var mutableTuple = data
+
+mutableTuple.1 = 404
+
 
 
 

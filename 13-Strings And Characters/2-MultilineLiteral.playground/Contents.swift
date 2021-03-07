@@ -26,6 +26,21 @@ import UIKit
  */
 
 
+let SingleLineStr = "Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community, first released in 2014. Swift was developed as a replacement for Apple's earlier programming language Objective-C, as Objective-C had been largely unchanged since the early 1980s and lacked modern language features. Swift works with Apple's Cocoa and Cocoa Touch frameworks, and a key aspect of Swift's design was the"
+
+let MultiLine = """
+Swift is a general-purpose,
+    multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community, first released in 2014. Swift was
+    developed as a replacement for Apple's earlier programming language Objective-C, as Objective-C had been largely unchanged
+since the early \
+1980s and lacked modern language features. Swift works with Apple's Cocoa and Cocoa Touch frameworks,
+and a key aspect of Swift's design was the
+"""
+
+print(MultiLine)
+
+
+
 
 
 
