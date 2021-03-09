@@ -74,10 +74,35 @@ print(str)
 
 print("A\tB")
 
-
 print("C\nB")
 
+struct Size
+{
+    var width = 0.0
+    var height = 0.0
+}
 
+let s = Size(width: 1.2, height: 3.4)
+
+print("\(s)")
+
+/*
+extension Size : CustomStringConvertible
+{
+    var description: String
+    {
+        return "\(width) x \(height)"
+    }
+}
+
+extension String.StringInterpolation
+{
+    mutating func appendInterpolation(_ value:Size)
+    {
+        appendInterpolation("\(value.width) x \(value.height)")
+    }
+}
+*/
 
 
 
