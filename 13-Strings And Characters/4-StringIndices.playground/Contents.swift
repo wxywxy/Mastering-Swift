@@ -24,11 +24,33 @@ import UIKit
 /*:
  # String Indices
  */
+let str = "Swift"
+
+let firstCh = str[str.startIndex]
+
+let lastCharIndex = str.index(before: str.endIndex)
+let lastCh  = str[lastCharIndex]
+
+print(firstCh)
+print(lastCh)
+
+let secondCharIndex : String.Index = str.index(after: str.startIndex)
+let secondCh = str[secondCharIndex]
 
 
+print(secondCh)
 
+// var thirdCharIndex = str.index(str.startIndex, offsetBy: 2)
+var thirdCharIndex = str.index(str.endIndex, offsetBy: -3)
 
+var thirdCh = str[thirdCharIndex]
 
+print(thirdCh)
+
+if thirdCharIndex < str.endIndex  && thirdCharIndex >= str.startIndex
+{
+    
+}
 
 
 
