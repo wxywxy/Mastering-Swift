@@ -25,3 +25,71 @@ import UIKit
  # String Basics
  */
 
+var str = "Hello, Swift String"
+
+var emptyStr = ""                   // 빈문자열
+emptyStr = String()                 // 빈문자열
+
+let a = String(true)
+
+print(a)
+
+let b = String(12)
+
+print(b)
+
+let c = String(12.34)
+
+print(c)
+
+let d = String(str)
+
+print(d)
+
+let hex = String(123,radix: 16)     // 16 진수
+let octal = String(123,radix: 8)    // 8 진수
+let binary = String(123,radix: 2)    // 2 진수
+
+print(hex)
+print(octal)
+print(binary)
+
+let repeatStr = String(repeating: "*", count: 7 )
+
+print(repeatStr)
+
+let unicode = "\u{1f44f}"
+
+print(unicode)
+
+let e = "\(a) \(b)"
+let f = a + " " + b
+
+str += "!!"
+
+print(str)
+
+str.count               // 문자열 길이
+
+str.isEmpty
+
+str == "Apple"
+
+"apple" != "Apple"      // 대소문자 다름 ( 값 true )
+
+"apple" < "Apple"       // 소문자 a 가 더크다 ( 값 false )
+
+str.lowercased()
+str.uppercased()
+
+"apple ipad".capitalized         // 각 단어의 문자를 대문자로 ( "Apple Ipad" )
+
+for char in "Hello"
+{
+    print(char)
+}
+
+let num = "1234567890"
+
+num.randomElement()         // 랜덤으로 문자 한개 리턴
+
