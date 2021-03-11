@@ -24,19 +24,24 @@ import UIKit
 /*:
  # Appending Strings and Characters
  */
+/*
+var str = "Hello"
+str.append(", ")
 
+let s = str.appending("Swift")
 
+print(str)
+print(s)
 
+"fize size is".appendingFormat("%.1f", 12.3456)
+*/
 
+var str = "Hello Swift"
 
+str.insert(",", at: str.index(str.startIndex,offsetBy: 5))
 
-
-
-
-
-
-
-
-
+if let sIndex = str.firstIndex(of: "S") {
+    str.insert(contentsOf: "Awesome ", at: sIndex )
+}
 
 //: [Next](@next)

@@ -29,14 +29,54 @@ import Foundation
 
 
 
+var str = "Hello, Awesome Swift!!!"
+
+/*
+let lastCharIndex = str.index(before: str.endIndex)
+
+var removed = str.remove(at: lastCharIndex)
+
+print(removed)
+print(str)
+
+removed = str.removeFirst()
+print(removed)
+print(str)
+
+str.removeFirst(2)
+
+print(str)
+
+str.removeLast(2)
+
+print(str)
+
+if let range = str.range(of: "Awesome" ) {
+    str.removeSubrange(range)
+    print(str)
+}
+
+str.removeAll() // 메모리 공간도 같이 삭제함
+
+str.removeAll(keepingCapacity: true) // 메모리 공간은 남겨둠
+
+*/
 
 
 
 
+str = "Hello, Awesome Swift!!!"
 
+var substr = str.dropLast()    // SubString 으로 메모리 공간을 공유함
 
+print(substr)
 
+substr = str.dropLast(3)
 
+print(substr)
 
+substr = str.drop(while: { (ch) -> Bool in
+    return ch != ","
+})
 
-
+print(substr)

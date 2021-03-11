@@ -28,8 +28,29 @@ import Foundation
  */
 
 
+var str = "Hello, Objective-C"
+
+if let range = str.range(of:"Objective-C") {
+    str.replaceSubrange(range, with: "Swift")
+}
+
+if let range = str.range(of: "Hello")
+{
+    let s = str.replacingCharacters(in: range, with:"Hi")
+    
+    print(s)
+    print(str)
+}
+
+var s = str.replacingOccurrences(of: "Swift", with: "Awesome Swift")
+
+print(s)
 
 
+s = str.replacingOccurrences(of: "swift", with: "Awesome Swift")
 
+print(s)
 
+s = str.replacingOccurrences(of: "swift", with: "Awesome Swift" , options: [.caseInsensitive])
 
+print(s)
