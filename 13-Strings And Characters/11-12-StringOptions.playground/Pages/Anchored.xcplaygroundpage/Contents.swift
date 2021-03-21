@@ -28,16 +28,75 @@ import Foundation
  */
 
 
+var str = "Swift Programming"
+
+if let result = str.range(of: "Swift")
+{
+    print(str.distance(from: str.startIndex, to: result.lowerBound ))           // 0
+}
+else
+{
+    print("Not Found")
+}
+
+if let result = str.range(of: "Swift" , options: [.backwards])
+{
+    print(str.distance(from: str.startIndex, to: result.lowerBound ))           // 0
+}
+else
+{
+    print("Not Found")
+}
+
+if let result = str.range(of: "Swift" , options: [.anchored])
+{
+    print(str.distance(from: str.startIndex, to: result.lowerBound ))           // 0
+}
+else
+{
+    print("Not Found")
+}
+
+if let result = str.range(of: "Swift" , options: [.anchored, .backwards])
+{
+    print(str.distance(from: str.startIndex, to: result.lowerBound ))
+}
+else
+{
+    print("Not Found")          // Not Found ( Programming 만 검사 )
+}
+
+str = "Programming Swift"
+
+if let result = str.range(of: "Swift" , options: [.anchored, .backwards])
+{
+    print(str.distance(from: str.startIndex, to: result.lowerBound ))   // 12 ( 뒤에 Swift 만 검사 )
+}
+else
+{
+    print("Not Found")
+}
+
+str = "Swift Programming"
+
+str.lowercased().hasPrefix("swift") // 접두어 검사
+
+if let _ = str.range(of: "swift" , options: [.anchored,.caseInsensitive] )  // 접두어 검사
+{
+    print("same prefix")        // same prefix
+}
 
 
+str.lowercased().hasSuffix("swift") // 접미어 검사
 
-
-
-
-
-
-
-
+if let _ = str.range(of: "swift" , options: [.anchored,.caseInsensitive,.backwards] ) // 접미어 검사
+{
+    print("same Suffix")
+}
+else
+{
+    print("Not Found Suffix")   // Not Found Suffix
+}
 
 
 

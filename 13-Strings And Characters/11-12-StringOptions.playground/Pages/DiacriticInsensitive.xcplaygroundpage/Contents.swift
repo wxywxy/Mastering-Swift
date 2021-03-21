@@ -29,7 +29,13 @@ import Foundation
 
 
 
+let a = "Cafe"
+let b = "Cafè"
 
+a == b                                                              // false
+a.compare(b) == .orderedSame                                        // false
+
+a.compare(b,options: [.diacriticInsensitive]) == .orderedSame       // true
 
 
 

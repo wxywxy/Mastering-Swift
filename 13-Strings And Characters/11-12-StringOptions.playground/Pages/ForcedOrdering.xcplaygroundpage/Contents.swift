@@ -28,6 +28,14 @@ import Foundation
  */
 
 
+let upper = "STRING"
+let lower = "string"
+
+upper == lower  // false
+
+upper.compare(lower,options: [.caseInsensitive]) == .orderedSame  // true
+
+upper.compare(lower,options: [.caseInsensitive,.forcedOrdering]) == .orderedSame  // false
 
 
 

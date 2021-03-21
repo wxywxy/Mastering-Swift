@@ -27,10 +27,17 @@ import UIKit
  # Numeric Option
  */
 
+"A" < "B"           // true
+"a" < "B"           // false ASCII 에 a 가 B 보다 뒤에 있다
 
+let file9 = "file9.txt"
+let file10 = "file10.txt"
 
+file9 < file10      // false ( 9 와 10의 1을 비교하면 9가 크다 )
 
+file9.compare(file10) == .orderedAscending    // false 위와 동일
 
+file9.compare(file10,options: [.numeric]) == .orderedAscending   // true 문자열에서 숫자를 숫자로 인식 9 < 10 이라서 true
 
 
 

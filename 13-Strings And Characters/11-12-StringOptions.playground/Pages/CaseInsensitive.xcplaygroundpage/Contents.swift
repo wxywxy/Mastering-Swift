@@ -25,6 +25,14 @@ import UIKit
  # Case Insensitive Option
  */
 
+"A" == "a"      // false
+
+"A".caseInsensitiveCompare("a") == .orderedSame // true
+
+"a".compare("a", options: [.caseInsensitive] ) == .orderedSame // true
+
+// NSString.CompareOptions.caseInsensitive
+
 
 
 

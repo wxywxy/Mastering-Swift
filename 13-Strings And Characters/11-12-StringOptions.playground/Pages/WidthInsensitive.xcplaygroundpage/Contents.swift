@@ -27,10 +27,13 @@ import Foundation
  # Width Insensitive Option
  */
 
+let a = "\u{30A1}"      // 전각문가
+let b = "\u{ff67}"      // 반각문자
 
+a == b
+a.compare(b) == .orderedSame
 
-
-
+a.compare(b,options: [.widthInsensitive]) == .orderedSame   // true
 
 
 

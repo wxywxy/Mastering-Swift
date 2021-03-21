@@ -28,6 +28,16 @@ import Foundation
  */
 
 
+let a = "\u{D55C}"                          // 완성형
+let b = "\u{1112}\u{1161}\u{11AB}"          // 조합형
+
+a == b                                      // true  ( 최종문자가 같으면 true )
+a.compare(b) == .orderedSame                // true
+
+a.compare(b, options: [.literal] ) == .orderedSame // false
+
+
+
 
 
 

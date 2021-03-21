@@ -28,10 +28,35 @@ import Foundation
  */
 
 
+let emailPattern = "([0-9a-zA-Z_-]+)@([0-9a-zA-Z_-]+)(\\.[0-9a-zA-Z_-]+){1,2}"  // 정규식
+let emailAddress = "user@example.com🤝"
+
+if let _ = emailAddress.range(of: emailPattern)
+{
+    print("found")
+}
+else
+{
+    print("not found")  // not found
+}
 
 
+if let _ = emailAddress.range(of: emailPattern , options: [.regularExpression ])
+{
+    print("found")  // Found
+}
+else
+{
+    print("not found")
+}
 
-
+if let range = emailAddress.range(of: emailPattern , options: [.regularExpression ] ) , ( range.lowerBound,range.upperBound) == (emailAddress.startIndex,emailAddress.endIndex) {
+    print("found")  // Found
+}
+else
+{
+    print("not found")
+}
 
 
 

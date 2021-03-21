@@ -31,6 +31,15 @@ let korean = "행복하세요"
 let english = "Be happy"
 let arabic = "كن سعيدا"
 
+if let range = english.range(of: "p" )
+{
+    english.distance(from: english.startIndex , to: range.lowerBound)       // 5 ( Be Happy 에서 a 다음에 있는 p )
+}
+
+if let range = english.range(of: "p" , options: [.backwards])
+{
+    english.distance(from: english.startIndex ,to: range.lowerBound)       // 6 ( Be happy 에서 y 앞에 있는 p )
+}
 
 
 
